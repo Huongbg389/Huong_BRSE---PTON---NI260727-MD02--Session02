@@ -1,0 +1,6 @@
+CREATE TABLE Students_Constraint (
+StudentID INT PRIMARY KEY,
+Fullname VARCHAR(50) NOT NULL,
+Email VARCHAR(50) UNIQUE,
+Age INT CHECK(Age >= 18 )
+);
